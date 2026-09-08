@@ -1,0 +1,52 @@
+{
+  "symbol": "AAPL",
+  "calibration": {
+    "daily_vol": 0.015803514938565695,
+    "last_price": 319.9700012207031,
+    "sigma_dollar_per_day": 5.056650694184266,
+    "n_steps": 390,
+    "arrival_intensity": 30.0,
+    "arrival_intensity_x_dt": 0.07692307692307693,
+    "kappa": 1.0,
+    "inventory_limit": 50.0,
+    "n_sessions_per_scenario": 300
+  },
+  "scenarios": {
+    "low_risk_aversion": {
+      "gamma": 0.01,
+      "n_sessions": 300,
+      "mean_fills_per_session": 21.02,
+      "mean_pnl_per_session": 21.64312480354745,
+      "std_pnl_per_session": 10.279482020519165,
+      "pnl_sharpe_like": 2.1054684234424457,
+      "pct_sessions_profitable": 0.9833333333333333,
+      "mean_max_abs_inventory": 3.6366666666666667,
+      "worst_session_pnl": -14.346146590280341,
+      "best_session_pnl": 60.17892197238098
+    },
+    "moderate_risk_aversion": {
+      "gamma": 0.05,
+      "n_sessions": 300,
+      "mean_fills_per_session": 18.86,
+      "mean_pnl_per_session": 19.127066905954266,
+      "std_pnl_per_session": 6.952191529894521,
+      "pnl_sharpe_like": 2.7512284182200117,
+      "pct_sessions_profitable": 1.0,
+      "mean_max_abs_inventory": 2.4266666666666667,
+      "worst_session_pnl": 3.1856088814520263,
+      "best_session_pnl": 48.516186994274904
+    },
+    "high_risk_aversion": {
+      "gamma": 0.2,
+      "n_sessions": 300,
+      "mean_fills_per_session": 11.656666666666666,
+      "mean_pnl_per_session": 11.569047027262307,
+      "std_pnl_per_session": 4.7760637085206,
+      "pnl_sharpe_like": 2.4222974678128515,
+      "pct_sessions_profitable": 1.0,
+      "mean_max_abs_inventory": 1.61,
+      "worst_session_pnl": 0.9507563089698579,
+      "best_session_pnl": 25.6912502917628
+    }
+  }
+}

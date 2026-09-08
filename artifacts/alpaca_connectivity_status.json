@@ -1,0 +1,9 @@
+{
+  "configured": true,
+  "base_url": "https://paper-api.alpaca.markets",
+  "connected": true,
+  "account_status": "ACTIVE",
+  "equity": "99793.92",
+  "buying_power": "291423",
+  "market_open": false
+}

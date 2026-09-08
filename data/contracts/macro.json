@@ -1,0 +1,15 @@
+{
+  "table": "macro",
+  "grain": "one row per (series_id, date)",
+  "source": "Federal Reserve Bank of St. Louis (FRED), public fredgraph.csv endpoint",
+  "columns": {
+    "series_id": {"type": "string", "description": "FRED series ID, see alpha_desk.data.universe.FRED_SERIES for labels"},
+    "date": {"type": "date", "description": "Observation date as published by FRED"},
+    "value": {"type": "float", "description": "Series value; NaN where FRED marks the observation missing ('.')"}
+  },
+  "invariants": [
+    "no duplicate (series_id, date) pairs",
+    "value may legitimately be NaN (holiday/not-yet-released/discontinued window) -- callers must handle this, not assume completeness",
+    "date is never later than the fetch date recorded in data/provenance/source_manifest.json"
+  ]
+}

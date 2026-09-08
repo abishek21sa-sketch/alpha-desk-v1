@@ -1,0 +1,179 @@
+{
+  "var_cvar": {
+    "pairs": {
+      "var_95": 0.004739319755035169,
+      "cvar_95": 0.0158961851268583,
+      "var_99": 0.02157334341379164,
+      "cvar_99": 0.03274252159377618
+    },
+    "factors": {
+      "var_95": 0.1264036483315801,
+      "cvar_95": 0.19833306528101316,
+      "var_99": 0.2397836434294942,
+      "cvar_99": 0.25462765808047944
+    },
+    "ml": {
+      "var_95": 0.06944765520773791,
+      "cvar_95": 0.10333432307965758,
+      "var_99": 0.11631962671016426,
+      "cvar_99": 0.1398710194185972
+    },
+    "momentum": {
+      "var_95": 0.02436831490467905,
+      "cvar_95": 0.0439567090191613,
+      "var_99": 0.0400899012840552,
+      "cvar_99": 0.08956508148651576
+    },
+    "pead": {
+      "var_95": 0.002517492820117706,
+      "cvar_95": 0.004463929524335975,
+      "var_99": 0.0050510580811242815,
+      "cvar_99": 0.008201215418300588
+    }
+  },
+  "stress": {
+    "pairs": [
+      {
+        "window": "covid_crash_2020",
+        "has_coverage": false,
+        "cumulative_return": null,
+        "max_drawdown": null,
+        "n_obs": 0
+      },
+      {
+        "window": "rate_shock_2022",
+        "has_coverage": true,
+        "cumulative_return": 0.06486503885064576,
+        "max_drawdown": -0.12165216936094436,
+        "n_obs": 209
+      }
+    ],
+    "factors": [
+      {
+        "window": "covid_crash_2020",
+        "has_coverage": false,
+        "cumulative_return": null,
+        "max_drawdown": null,
+        "n_obs": 1
+      },
+      {
+        "window": "rate_shock_2022",
+        "has_coverage": true,
+        "cumulative_return": 0.26570468278156967,
+        "max_drawdown": -0.11572533762095683,
+        "n_obs": 10
+      }
+    ],
+    "ml": [
+      {
+        "window": "covid_crash_2020",
+        "has_coverage": false,
+        "cumulative_return": null,
+        "max_drawdown": null,
+        "n_obs": 1
+      },
+      {
+        "window": "rate_shock_2022",
+        "has_coverage": true,
+        "cumulative_return": -0.24516501545852099,
+        "max_drawdown": -0.16890025108932316,
+        "n_obs": 10
+      }
+    ],
+    "momentum": [
+      {
+        "window": "covid_crash_2020",
+        "has_coverage": false,
+        "cumulative_return": null,
+        "max_drawdown": null,
+        "n_obs": 1
+      },
+      {
+        "window": "rate_shock_2022",
+        "has_coverage": true,
+        "cumulative_return": 0.03279895385592724,
+        "max_drawdown": -0.0387106446128509,
+        "n_obs": 10
+      }
+    ],
+    "pead": [
+      {
+        "window": "covid_crash_2020",
+        "has_coverage": true,
+        "cumulative_return": 0.04618004755469696,
+        "max_drawdown": -0.01170104431133201,
+        "n_obs": 24
+      },
+      {
+        "window": "rate_shock_2022",
+        "has_coverage": true,
+        "cumulative_return": -0.052257271830441154,
+        "max_drawdown": -0.06314729115407247,
+        "n_obs": 209
+      }
+    ]
+  },
+  "execution_example": {
+    "symbol": "AAPL",
+    "last_price": 319.9700012207031,
+    "adv_dollars": 16521449083.606009,
+    "daily_vol": 0.02025515781146778,
+    "shares_to_sell": 500000,
+    "scenarios": {
+      "risk_neutral": {
+        "risk_aversion": 0.0,
+        "expected_cost_bps": 0.041154758832182885,
+        "cost_std_bps": 281.0289094714935,
+        "holdings_pct": [
+          1.0,
+          0.9,
+          0.8,
+          0.7,
+          0.6,
+          0.5,
+          0.4,
+          0.30000000000000004,
+          0.19999999999999996,
+          0.09999999999999998,
+          0.0
+        ]
+      },
+      "moderate": {
+        "risk_aversion": 1e-09,
+        "expected_cost_bps": 0.12099725743930374,
+        "cost_std_bps": 148.8786939302261,
+        "holdings_pct": [
+          0.9999999999999999,
+          0.272947883738359,
+          0.0745005471766885,
+          0.02033476645082242,
+          0.005550330591110769,
+          0.0015149477710940957,
+          0.0004134899987022381,
+          0.00011281802716918472,
+          3.0635195691593214e-05,
+          7.782045205934974e-06,
+          0.0
+        ]
+      },
+      "risk_averse": {
+        "risk_aversion": 1e-07,
+        "expected_cost_bps": 0.1919460648916297,
+        "cost_std_bps": 143.22746508602896,
+        "holdings_pct": [
+          1.0000000000000002,
+          0.00511090707736649,
+          2.612137115347507e-05,
+          1.335039006988136e-07,
+          6.823260309375996e-10,
+          3.487304940590376e-12,
+          1.7823291501798547e-14,
+          9.109318667850692e-17,
+          4.655688121773882e-19,
+          2.379416783529601e-21,
+          0.0
+        ]
+      }
+    }
+  }
+}

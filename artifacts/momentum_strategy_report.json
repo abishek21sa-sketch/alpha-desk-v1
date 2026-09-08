@@ -1,0 +1,954 @@
+{
+  "n_assets": 10,
+  "n_rebalances": 233,
+  "gross_sharpe": 0.4150576441068453,
+  "net_sharpe": 0.4019925514634973,
+  "cost_drag": 0.013065092643347986,
+  "probabilistic_sharpe_ratio": 0.9366238021253135,
+  "per_asset_sharpe": {
+    "GLD": 0.4082107401828582,
+    "HYG": 0.30264748240640643,
+    "IEF": 0.2258891856374868,
+    "IWM": 0.06309867310303093,
+    "LQD": 0.3802376750967323,
+    "QQQ": 0.5654761082729194,
+    "SPY": 0.40988452470781905,
+    "TLT": 0.23980449514380447,
+    "USO": -0.30440852398571117,
+    "UUP": -0.11812734197156101
+  },
+  "equity_curve": [
+    {
+      "date": "2007-04-11",
+      "cumulative_return": 0.0
+    },
+    {
+      "date": "2007-05-10",
+      "cumulative_return": -0.02233349704163723
+    },
+    {
+      "date": "2007-06-11",
+      "cumulative_return": -0.017792906002678355
+    },
+    {
+      "date": "2007-07-11",
+      "cumulative_return": -0.017531572437139875
+    },
+    {
+      "date": "2007-08-09",
+      "cumulative_return": 0.0018101951954330175
+    },
+    {
+      "date": "2007-09-10",
+      "cumulative_return": 0.014705595595759124
+    },
+    {
+      "date": "2007-10-09",
+      "cumulative_return": 0.017652467117630355
+    },
+    {
+      "date": "2007-11-07",
+      "cumulative_return": 0.015956281640232328
+    },
+    {
+      "date": "2007-12-07",
+      "cumulative_return": 0.02469119648998319
+    },
+    {
+      "date": "2008-01-09",
+      "cumulative_return": 0.02155753648306402
+    },
+    {
+      "date": "2008-02-08",
+      "cumulative_return": 0.027577248838877244
+    },
+    {
+      "date": "2008-03-11",
+      "cumulative_return": 0.02644738717785078
+    },
+    {
+      "date": "2008-04-10",
+      "cumulative_return": 0.02236162180587753
+    },
+    {
+      "date": "2008-05-09",
+      "cumulative_return": 0.014554088336550253
+    },
+    {
+      "date": "2008-06-10",
+      "cumulative_return": 0.02611002088140202
+    },
+    {
+      "date": "2008-07-10",
+      "cumulative_return": 0.008818892849295157
+    },
+    {
+      "date": "2008-08-08",
+      "cumulative_return": 0.01512002451137473
+    },
+    {
+      "date": "2008-09-09",
+      "cumulative_return": 0.0063332212946269895
+    },
+    {
+      "date": "2008-10-08",
+      "cumulative_return": 0.012917202056978327
+    },
+    {
+      "date": "2008-11-06",
+      "cumulative_return": 0.027377181854723265
+    },
+    {
+      "date": "2008-12-08",
+      "cumulative_return": 0.018997749472619896
+    },
+    {
+      "date": "2009-01-08",
+      "cumulative_return": 0.01787689805847381
+    },
+    {
+      "date": "2009-02-09",
+      "cumulative_return": 0.028554511795229276
+    },
+    {
+      "date": "2009-03-11",
+      "cumulative_return": 0.007087820331377115
+    },
+    {
+      "date": "2009-04-09",
+      "cumulative_return": -0.009685336882643614
+    },
+    {
+      "date": "2009-05-11",
+      "cumulative_return": -0.030821985388609363
+    },
+    {
+      "date": "2009-06-10",
+      "cumulative_return": -0.019009974832752907
+    },
+    {
+      "date": "2009-07-10",
+      "cumulative_return": -0.04252848124998421
+    },
+    {
+      "date": "2009-08-10",
+      "cumulative_return": -0.04237074909120675
+    },
+    {
+      "date": "2009-09-09",
+      "cumulative_return": -0.03598094693944409
+    },
+    {
+      "date": "2009-10-08",
+      "cumulative_return": -0.039275741661146
+    },
+    {
+      "date": "2009-11-06",
+      "cumulative_return": -0.02548702207245701
+    },
+    {
+      "date": "2009-12-08",
+      "cumulative_return": -0.023632247483215352
+    },
+    {
+      "date": "2010-01-08",
+      "cumulative_return": -0.04807882169201405
+    },
+    {
+      "date": "2010-02-09",
+      "cumulative_return": -0.016899380960839094
+    },
+    {
+      "date": "2010-03-11",
+      "cumulative_return": -0.006454146515253223
+    },
+    {
+      "date": "2010-04-12",
+      "cumulative_return": -0.02751466660961399
+    },
+    {
+      "date": "2010-05-11",
+      "cumulative_return": -0.052658740794165326
+    },
+    {
+      "date": "2010-06-10",
+      "cumulative_return": -0.03833033873419889
+    },
+    {
+      "date": "2010-07-12",
+      "cumulative_return": -0.029309331166017083
+    },
+    {
+      "date": "2010-08-10",
+      "cumulative_return": -0.02621063383896538
+    },
+    {
+      "date": "2010-09-09",
+      "cumulative_return": 0.0031451652942486863
+    },
+    {
+      "date": "2010-10-08",
+      "cumulative_return": 0.013689095126695028
+    },
+    {
+      "date": "2010-11-08",
+      "cumulative_return": -0.009750739757192428
+    },
+    {
+      "date": "2010-12-08",
+      "cumulative_return": 0.0005458560324724804
+    },
+    {
+      "date": "2011-01-07",
+      "cumulative_return": -0.0012633081815740521
+    },
+    {
+      "date": "2011-02-08",
+      "cumulative_return": -0.0029109267812738038
+    },
+    {
+      "date": "2011-03-10",
+      "cumulative_return": 0.012437592891667348
+    },
+    {
+      "date": "2011-04-08",
+      "cumulative_return": 0.032805441575324945
+    },
+    {
+      "date": "2011-05-10",
+      "cumulative_return": 0.025830854121041913
+    },
+    {
+      "date": "2011-06-09",
+      "cumulative_return": 0.03579765056485584
+    },
+    {
+      "date": "2011-07-11",
+      "cumulative_return": 0.029751870223764465
+    },
+    {
+      "date": "2011-08-09",
+      "cumulative_return": 0.05258801069589647
+    },
+    {
+      "date": "2011-09-08",
+      "cumulative_return": 0.035939814731249076
+    },
+    {
+      "date": "2011-10-07",
+      "cumulative_return": 0.06542723470819722
+    },
+    {
+      "date": "2011-11-07",
+      "cumulative_return": 0.05843695318079645
+    },
+    {
+      "date": "2011-12-07",
+      "cumulative_return": 0.059384298437127114
+    },
+    {
+      "date": "2012-01-09",
+      "cumulative_return": 0.07399642786893756
+    },
+    {
+      "date": "2012-02-08",
+      "cumulative_return": 0.07842229234503217
+    },
+    {
+      "date": "2012-03-09",
+      "cumulative_return": 0.07265438670406987
+    },
+    {
+      "date": "2012-04-10",
+      "cumulative_return": 0.08236790483676759
+    },
+    {
+      "date": "2012-05-09",
+      "cumulative_return": 0.09504111689910189
+    },
+    {
+      "date": "2012-06-08",
+      "cumulative_return": 0.10939189485165701
+    },
+    {
+      "date": "2012-07-10",
+      "cumulative_return": 0.11134662691366892
+    },
+    {
+      "date": "2012-08-08",
+      "cumulative_return": 0.11603944237258168
+    },
+    {
+      "date": "2012-09-07",
+      "cumulative_return": 0.1151159654634204
+    },
+    {
+      "date": "2012-10-08",
+      "cumulative_return": 0.10677264645031848
+    },
+    {
+      "date": "2012-11-08",
+      "cumulative_return": 0.12159233802410196
+    },
+    {
+      "date": "2012-12-10",
+      "cumulative_return": 0.12533685580615095
+    },
+    {
+      "date": "2013-01-10",
+      "cumulative_return": 0.12507731538160916
+    },
+    {
+      "date": "2013-02-11",
+      "cumulative_return": 0.12542083684647976
+    },
+    {
+      "date": "2013-03-13",
+      "cumulative_return": 0.15899532883809098
+    },
+    {
+      "date": "2013-04-12",
+      "cumulative_return": 0.16624333212542663
+    },
+    {
+      "date": "2013-05-13",
+      "cumulative_return": 0.12669681414971
+    },
+    {
+      "date": "2013-06-12",
+      "cumulative_return": 0.1330178348931732
+    },
+    {
+      "date": "2013-07-12",
+      "cumulative_return": 0.13792371261695902
+    },
+    {
+      "date": "2013-08-12",
+      "cumulative_return": 0.14805649985526914
+    },
+    {
+      "date": "2013-09-11",
+      "cumulative_return": 0.1466588832858342
+    },
+    {
+      "date": "2013-10-10",
+      "cumulative_return": 0.15629447912322791
+    },
+    {
+      "date": "2013-11-08",
+      "cumulative_return": 0.16980242773823684
+    },
+    {
+      "date": "2013-12-10",
+      "cumulative_return": 0.17225410305403055
+    },
+    {
+      "date": "2014-01-10",
+      "cumulative_return": 0.16842241557615867
+    },
+    {
+      "date": "2014-02-11",
+      "cumulative_return": 0.1720018081804937
+    },
+    {
+      "date": "2014-03-13",
+      "cumulative_return": 0.17036998326928465
+    },
+    {
+      "date": "2014-04-11",
+      "cumulative_return": 0.18375363901757247
+    },
+    {
+      "date": "2014-05-13",
+      "cumulative_return": 0.1970281396225535
+    },
+    {
+      "date": "2014-06-12",
+      "cumulative_return": 0.19934353142014816
+    },
+    {
+      "date": "2014-07-14",
+      "cumulative_return": 0.18869052115542373
+    },
+    {
+      "date": "2014-08-12",
+      "cumulative_return": 0.18672203770970608
+    },
+    {
+      "date": "2014-09-11",
+      "cumulative_return": 0.177865120206798
+    },
+    {
+      "date": "2014-10-10",
+      "cumulative_return": 0.23086744912321788
+    },
+    {
+      "date": "2014-11-10",
+      "cumulative_return": 0.24305028737847745
+    },
+    {
+      "date": "2014-12-10",
+      "cumulative_return": 0.28723764878270863
+    },
+    {
+      "date": "2015-01-12",
+      "cumulative_return": 0.29675962315586846
+    },
+    {
+      "date": "2015-02-11",
+      "cumulative_return": 0.3083880622854671
+    },
+    {
+      "date": "2015-03-13",
+      "cumulative_return": 0.3194355394758157
+    },
+    {
+      "date": "2015-04-14",
+      "cumulative_return": 0.28762984589986584
+    },
+    {
+      "date": "2015-05-13",
+      "cumulative_return": 0.2887888482541128
+    },
+    {
+      "date": "2015-06-12",
+      "cumulative_return": 0.29824425014410894
+    },
+    {
+      "date": "2015-07-14",
+      "cumulative_return": 0.3183182284627102
+    },
+    {
+      "date": "2015-08-12",
+      "cumulative_return": 0.2992038027032753
+    },
+    {
+      "date": "2015-09-11",
+      "cumulative_return": 0.3059622370849855
+    },
+    {
+      "date": "2015-10-12",
+      "cumulative_return": 0.3205861800120753
+    },
+    {
+      "date": "2015-11-10",
+      "cumulative_return": 0.3330030490260203
+    },
+    {
+      "date": "2015-12-10",
+      "cumulative_return": 0.33342759992606585
+    },
+    {
+      "date": "2016-01-12",
+      "cumulative_return": 0.3277701948963152
+    },
+    {
+      "date": "2016-02-11",
+      "cumulative_return": 0.28886579265938983
+    },
+    {
+      "date": "2016-03-14",
+      "cumulative_return": 0.2829498439588518
+    },
+    {
+      "date": "2016-04-13",
+      "cumulative_return": 0.2826236303021741
+    },
+    {
+      "date": "2016-05-12",
+      "cumulative_return": 0.2907102316141663
+    },
+    {
+      "date": "2016-06-13",
+      "cumulative_return": 0.30279012048822396
+    },
+    {
+      "date": "2016-07-13",
+      "cumulative_return": 0.30406557849456495
+    },
+    {
+      "date": "2016-08-11",
+      "cumulative_return": 0.29528396159649795
+    },
+    {
+      "date": "2016-09-12",
+      "cumulative_return": 0.28388858504287384
+    },
+    {
+      "date": "2016-10-11",
+      "cumulative_return": 0.27202054528835196
+    },
+    {
+      "date": "2016-11-09",
+      "cumulative_return": 0.2673739793118941
+    },
+    {
+      "date": "2016-12-09",
+      "cumulative_return": 0.2873451285558246
+    },
+    {
+      "date": "2017-01-11",
+      "cumulative_return": 0.2977714565928502
+    },
+    {
+      "date": "2017-02-10",
+      "cumulative_return": 0.2874865563694615
+    },
+    {
+      "date": "2017-03-14",
+      "cumulative_return": 0.279287831732256
+    },
+    {
+      "date": "2017-04-12",
+      "cumulative_return": 0.3009118921551641
+    },
+    {
+      "date": "2017-05-12",
+      "cumulative_return": 0.3092272505375102
+    },
+    {
+      "date": "2017-06-13",
+      "cumulative_return": 0.3190900290994063
+    },
+    {
+      "date": "2017-07-13",
+      "cumulative_return": 0.2899714653875667
+    },
+    {
+      "date": "2017-08-11",
+      "cumulative_return": 0.30391717816482844
+    },
+    {
+      "date": "2017-09-12",
+      "cumulative_return": 0.3275584872629609
+    },
+    {
+      "date": "2017-10-11",
+      "cumulative_return": 0.3157372030516672
+    },
+    {
+      "date": "2017-11-09",
+      "cumulative_return": 0.3299167362361537
+    },
+    {
+      "date": "2017-12-11",
+      "cumulative_return": 0.3663673671291032
+    },
+    {
+      "date": "2018-01-11",
+      "cumulative_return": 0.3084833275119201
+    },
+    {
+      "date": "2018-02-12",
+      "cumulative_return": 0.34225612448101894
+    },
+    {
+      "date": "2018-03-14",
+      "cumulative_return": 0.34709311390260544
+    },
+    {
+      "date": "2018-04-13",
+      "cumulative_return": 0.3384326991854467
+    },
+    {
+      "date": "2018-05-14",
+      "cumulative_return": 0.3372082550554467
+    },
+    {
+      "date": "2018-06-13",
+      "cumulative_return": 0.3298643187165471
+    },
+    {
+      "date": "2018-07-13",
+      "cumulative_return": 0.3234058728270339
+    },
+    {
+      "date": "2018-08-13",
+      "cumulative_return": 0.3350409259568441
+    },
+    {
+      "date": "2018-09-12",
+      "cumulative_return": 0.31362073761203013
+    },
+    {
+      "date": "2018-10-11",
+      "cumulative_return": 0.322210460366668
+    },
+    {
+      "date": "2018-11-09",
+      "cumulative_return": 0.2755911652398024
+    },
+    {
+      "date": "2018-12-12",
+      "cumulative_return": 0.25243784058979224
+    },
+    {
+      "date": "2019-01-14",
+      "cumulative_return": 0.2519901712137087
+    },
+    {
+      "date": "2019-02-13",
+      "cumulative_return": 0.24637395291211006
+    },
+    {
+      "date": "2019-03-15",
+      "cumulative_return": 0.2637513661662576
+    },
+    {
+      "date": "2019-04-15",
+      "cumulative_return": 0.2743573604239762
+    },
+    {
+      "date": "2019-05-15",
+      "cumulative_return": 0.3048630303322222
+    },
+    {
+      "date": "2019-06-14",
+      "cumulative_return": 0.30817403326606607
+    },
+    {
+      "date": "2019-07-16",
+      "cumulative_return": 0.3574476335404244
+    },
+    {
+      "date": "2019-08-14",
+      "cumulative_return": 0.34729831425213176
+    },
+    {
+      "date": "2019-09-13",
+      "cumulative_return": 0.36640537113860705
+    },
+    {
+      "date": "2019-10-14",
+      "cumulative_return": 0.3586716405012458
+    },
+    {
+      "date": "2019-11-12",
+      "cumulative_return": 0.3657038475509571
+    },
+    {
+      "date": "2019-12-12",
+      "cumulative_return": 0.3952632026983445
+    },
+    {
+      "date": "2020-01-14",
+      "cumulative_return": 0.42570457552717933
+    },
+    {
+      "date": "2020-02-13",
+      "cumulative_return": 0.17758578369558786
+    },
+    {
+      "date": "2020-03-16",
+      "cumulative_return": 0.3235360296017793
+    },
+    {
+      "date": "2020-04-15",
+      "cumulative_return": 0.3276792800605164
+    },
+    {
+      "date": "2020-05-14",
+      "cumulative_return": 0.31592554286007135
+    },
+    {
+      "date": "2020-06-15",
+      "cumulative_return": 0.321295749139489
+    },
+    {
+      "date": "2020-07-15",
+      "cumulative_return": 0.3211785755789862
+    },
+    {
+      "date": "2020-08-13",
+      "cumulative_return": 0.32632481279849235
+    },
+    {
+      "date": "2020-09-14",
+      "cumulative_return": 0.32889571275701157
+    },
+    {
+      "date": "2020-10-13",
+      "cumulative_return": 0.31717371226117397
+    },
+    {
+      "date": "2020-11-11",
+      "cumulative_return": 0.33994444410430846
+    },
+    {
+      "date": "2020-12-11",
+      "cumulative_return": 0.3411041681312095
+    },
+    {
+      "date": "2021-01-13",
+      "cumulative_return": 0.340316721600068
+    },
+    {
+      "date": "2021-02-12",
+      "cumulative_return": 0.2985415548707364
+    },
+    {
+      "date": "2021-03-16",
+      "cumulative_return": 0.32975129992700714
+    },
+    {
+      "date": "2021-04-15",
+      "cumulative_return": 0.3339774250537966
+    },
+    {
+      "date": "2021-05-14",
+      "cumulative_return": 0.3438539393692688
+    },
+    {
+      "date": "2021-06-15",
+      "cumulative_return": 0.33554821762238585
+    },
+    {
+      "date": "2021-07-15",
+      "cumulative_return": 0.3362405091277303
+    },
+    {
+      "date": "2021-08-13",
+      "cumulative_return": 0.34391647687208615
+    },
+    {
+      "date": "2021-09-14",
+      "cumulative_return": 0.3413452631907119
+    },
+    {
+      "date": "2021-10-13",
+      "cumulative_return": 0.36073686414621275
+    },
+    {
+      "date": "2021-11-11",
+      "cumulative_return": 0.3461313591631552
+    },
+    {
+      "date": "2021-12-13",
+      "cumulative_return": 0.35417564184545114
+    },
+    {
+      "date": "2022-01-12",
+      "cumulative_return": 0.3412015980171803
+    },
+    {
+      "date": "2022-02-11",
+      "cumulative_return": 0.34685428820439634
+    },
+    {
+      "date": "2022-03-15",
+      "cumulative_return": 0.37707568978456796
+    },
+    {
+      "date": "2022-04-13",
+      "cumulative_return": 0.39646295086517624
+    },
+    {
+      "date": "2022-05-13",
+      "cumulative_return": 0.4150945219407125
+    },
+    {
+      "date": "2022-06-14",
+      "cumulative_return": 0.3948553958079757
+    },
+    {
+      "date": "2022-07-15",
+      "cumulative_return": 0.36031530080827356
+    },
+    {
+      "date": "2022-08-15",
+      "cumulative_return": 0.4015520493295577
+    },
+    {
+      "date": "2022-09-14",
+      "cumulative_return": 0.43883855417861084
+    },
+    {
+      "date": "2022-10-13",
+      "cumulative_return": 0.39859118623516054
+    },
+    {
+      "date": "2022-11-11",
+      "cumulative_return": 0.37158924579924557
+    },
+    {
+      "date": "2022-12-13",
+      "cumulative_return": 0.3647571747364473
+    },
+    {
+      "date": "2023-01-13",
+      "cumulative_return": 0.36322686811752325
+    },
+    {
+      "date": "2023-02-14",
+      "cumulative_return": 0.36789280165919425
+    },
+    {
+      "date": "2023-03-16",
+      "cumulative_return": 0.357025057662516
+    },
+    {
+      "date": "2023-04-17",
+      "cumulative_return": 0.36744996436434185
+    },
+    {
+      "date": "2023-05-16",
+      "cumulative_return": 0.3417669425169274
+    },
+    {
+      "date": "2023-06-15",
+      "cumulative_return": 0.3415843972810588
+    },
+    {
+      "date": "2023-07-18",
+      "cumulative_return": 0.32584860945169725
+    },
+    {
+      "date": "2023-08-16",
+      "cumulative_return": 0.32375379204839927
+    },
+    {
+      "date": "2023-09-15",
+      "cumulative_return": 0.3481185696546232
+    },
+    {
+      "date": "2023-10-16",
+      "cumulative_return": 0.3583631538974319
+    },
+    {
+      "date": "2023-11-14",
+      "cumulative_return": 0.3866689010133586
+    },
+    {
+      "date": "2023-12-14",
+      "cumulative_return": 0.3944314836498912
+    },
+    {
+      "date": "2024-01-17",
+      "cumulative_return": 0.41716706414921734
+    },
+    {
+      "date": "2024-02-15",
+      "cumulative_return": 0.42790501300968864
+    },
+    {
+      "date": "2024-03-18",
+      "cumulative_return": 0.43119344426416983
+    },
+    {
+      "date": "2024-04-17",
+      "cumulative_return": 0.4496793734198199
+    },
+    {
+      "date": "2024-05-16",
+      "cumulative_return": 0.45830383210680714
+    },
+    {
+      "date": "2024-06-17",
+      "cumulative_return": 0.4773781146643592
+    },
+    {
+      "date": "2024-07-18",
+      "cumulative_return": 0.47037519425983576
+    },
+    {
+      "date": "2024-08-16",
+      "cumulative_return": 0.4831774719492956
+    },
+    {
+      "date": "2024-09-17",
+      "cumulative_return": 0.49271498796265467
+    },
+    {
+      "date": "2024-10-16",
+      "cumulative_return": 0.4861148634606218
+    },
+    {
+      "date": "2024-11-14",
+      "cumulative_return": 0.5038492025848731
+    },
+    {
+      "date": "2024-12-16",
+      "cumulative_return": 0.49272051125461047
+    },
+    {
+      "date": "2025-01-17",
+      "cumulative_return": 0.5080214143139195
+    },
+    {
+      "date": "2025-02-19",
+      "cumulative_return": 0.4842999159271004
+    },
+    {
+      "date": "2025-03-20",
+      "cumulative_return": 0.4464201704655206
+    },
+    {
+      "date": "2025-04-21",
+      "cumulative_return": 0.49805916654496674
+    },
+    {
+      "date": "2025-05-20",
+      "cumulative_return": 0.500530552934211
+    },
+    {
+      "date": "2025-06-20",
+      "cumulative_return": 0.5170589462122586
+    },
+    {
+      "date": "2025-07-22",
+      "cumulative_return": 0.5174601440367037
+    },
+    {
+      "date": "2025-08-20",
+      "cumulative_return": 0.555202744113733
+    },
+    {
+      "date": "2025-09-19",
+      "cumulative_return": 0.5899389377588558
+    },
+    {
+      "date": "2025-10-20",
+      "cumulative_return": 0.5727088988988747
+    },
+    {
+      "date": "2025-11-18",
+      "cumulative_return": 0.6011800274086643
+    },
+    {
+      "date": "2025-12-18",
+      "cumulative_return": 0.6227226580704368
+    },
+    {
+      "date": "2026-01-21",
+      "cumulative_return": 0.6397301168479415
+    },
+    {
+      "date": "2026-02-20",
+      "cumulative_return": 0.5539732327249831
+    },
+    {
+      "date": "2026-03-23",
+      "cumulative_return": 0.6196530809079774
+    },
+    {
+      "date": "2026-04-22",
+      "cumulative_return": 0.6348960884121777
+    },
+    {
+      "date": "2026-05-21",
+      "cumulative_return": 0.645071761027862
+    },
+    {
+      "date": "2026-06-23",
+      "cumulative_return": 0.6344775126141324
+    },
+    {
+      "date": "2026-07-23",
+      "cumulative_return": 0.6465298823396575
+    },
+    {
+      "date": "2026-08-21",
+      "cumulative_return": 0.6464917039070102
+    }
+  ]
+}

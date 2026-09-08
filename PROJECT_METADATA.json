@@ -1,0 +1,44 @@
+{
+  "project": "Alpha Desk V1 — Quantitative Trading Research, Validation & Risk Platform",
+  "release_identity": "ALPHA_DESK_V1",
+  "release_stage": "PHASE_11_ALPACA_EXECUTION_ALL_PHASES_DONE_PLUS_PLATFORM",
+  "local_target": "Windows / PowerShell",
+  "phases_planned": [
+    "Phase 1: data backbone (prices, macro, fundamentals) -- DONE",
+    "Phase 2: validation engine (purged walk-forward CV, deflated Sharpe, PBO, transaction-cost model) -- DONE",
+    "Phase 3: statistical arbitrage / pairs trading module -- DONE",
+    "Phase 4: cross-sectional equity factor long/short module -- DONE",
+    "Phase 5: ML return classifier (gradient-boosted, calibrated) -- DONE (re-numbered ahead of the originally-planned time-series momentum module per user request for genuine ML, not just deterministic/econometric methods)",
+    "Phase 6: time-series momentum module (ETF proxies) -- DONE",
+    "Phase 7: earnings event-driven (PEAD) module -- DONE",
+    "Phase 8: risk & execution control tower (VaR/CVaR, stress tests, Almgren-Chriss) -- DONE",
+    "Phase 9: limit order book microstructure / market-making simulator (Avellaneda-Stoikov) -- DONE (disclosed: real volatility calibration, simulated order flow -- see docs/MICROSTRUCTURE_STRATEGY.md)",
+    "Phase 10: VIX term-structure / vol relative-value module -- DONE (real VIX/VIX3M/SVXY/VIXY data; harvest side net Sharpe 0.79/PSR 0.998, hedge side does not hold up -- see docs/VOL_RELVAL_STRATEGY.md)",
+    "Phase 11: Alpaca paper-trading execution -- DONE (thin tested REST client, 13 tests against mocked HTTP; live-verified against a real Alpaca paper account the user created -- see docs/ALPACA_EXECUTION.md)"
+  ],
+  "platform_layer": {
+    "backend": "service/ -- FastAPI, thin read layer over pre-computed artifacts/*.json (not a live-recompute API; see service/artifacts_io.py)",
+    "frontend": "frontend/ -- Next.js 16 (App Router) + TypeScript + Tailwind + Recharts, dark-first trading-desk UI, one page per strategy phase plus an overview dashboard",
+    "status": "DONE for phases 1-11's reporting surface -- all 11 planned phases have a router + page"
+  },
+  "data_mode": "real_external_data",
+  "equity_universe_size": 40,
+  "etf_proxy_universe_size": 10,
+  "macro_series_count": 9,
+  "fundamentals_xbrl_concepts": 8,
+  "data_sources": {
+    "prices": "Yahoo Finance (yfinance) -- real, unofficial endpoint, not a licensed vendor",
+    "macro": "FRED (Federal Reserve Bank of St. Louis) -- government-authoritative, though one series (BAMLH0A0HYM2) only has ~3 years of history via this endpoint -- see docs/DATA_BACKBONE.md",
+    "fundamentals": "SEC EDGAR XBRL company-facts API -- government-authoritative"
+  },
+  "known_limitations_doc": "docs/DATA_BACKBONE.md, docs/VALIDATION_ENGINE.md, docs/PAIRS_TRADING.md, docs/FACTOR_STRATEGY.md, docs/ML_STRATEGY.md, docs/MOMENTUM_STRATEGY.md, docs/PEAD_STRATEGY.md, docs/RISK_STRATEGY.md, docs/MICROSTRUCTURE_STRATEGY.md, docs/VOL_RELVAL_STRATEGY.md, and docs/ALPACA_EXECUTION.md",
+  "human_authority": "ALL_TRADE_DECISIONS_HUMAN_GATED",
+  "autonomous_execution": false,
+  "clean_entrypoints": {
+    "fetch_data": "scripts/fetch_public_data.py",
+    "build_warehouse": "scripts/build_data_backbone.py",
+    "tests": "pytest tests/ -v",
+    "backend": "python -m uvicorn service.main:app --port 8005 --reload",
+    "frontend": "npm --prefix frontend run dev"
+  }
+}

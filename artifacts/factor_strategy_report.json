@@ -1,0 +1,550 @@
+{
+  "n_splits": 3,
+  "n_folds": 3,
+  "n_rebalances": 123,
+  "gross_sharpe": 0.284634975104325,
+  "net_sharpe": 0.2729469224525803,
+  "cost_drag": 0.011688052651744718,
+  "probabilistic_sharpe_ratio": 0.7982264218493156,
+  "fold_weights": [
+    {
+      "fold": 0,
+      "weights": {
+        "momentum": 0.5130198913117585,
+        "low_vol": 0.0,
+        "value": 0.3568674562369289,
+        "quality": 0.13011265245131257
+      },
+      "ic_by_factor": {
+        "momentum": 0.10554078210452353,
+        "low_vol": -0.14765935002828362,
+        "value": 0.07341639393863017,
+        "quality": 0.026767365815569565
+      }
+    },
+    {
+      "fold": 1,
+      "weights": {
+        "momentum": 0.579786401706131,
+        "low_vol": 0.0,
+        "value": 0.39443409664605356,
+        "quality": 0.025779501647815367
+      },
+      "ic_by_factor": {
+        "momentum": 0.09743198805635063,
+        "low_vol": -0.09956444916106832,
+        "value": 0.06628389020568047,
+        "quality": 0.004332195596960062
+      }
+    },
+    {
+      "fold": 2,
+      "weights": {
+        "momentum": 0.44772418599368347,
+        "low_vol": 0.0,
+        "value": 0.5097380127063524,
+        "quality": 0.042537801299964054
+      },
+      "ic_by_factor": {
+        "momentum": 0.07000322000541978,
+        "low_vol": -0.07803386080007789,
+        "value": 0.07969929560408354,
+        "quality": 0.0066509318819560626
+      }
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2016-06-03",
+      "cumulative_return": 0.055346385090767614
+    },
+    {
+      "date": "2016-07-05",
+      "cumulative_return": 0.04431608178112678
+    },
+    {
+      "date": "2016-08-03",
+      "cumulative_return": -0.004373549312469693
+    },
+    {
+      "date": "2016-09-01",
+      "cumulative_return": 0.023664070706255202
+    },
+    {
+      "date": "2016-10-03",
+      "cumulative_return": -0.05435243013418989
+    },
+    {
+      "date": "2016-11-01",
+      "cumulative_return": -0.13660056322513703
+    },
+    {
+      "date": "2016-12-01",
+      "cumulative_return": -0.13220746834064268
+    },
+    {
+      "date": "2017-01-03",
+      "cumulative_return": -0.16472403411819836
+    },
+    {
+      "date": "2017-02-02",
+      "cumulative_return": -0.1729178196538087
+    },
+    {
+      "date": "2017-03-06",
+      "cumulative_return": -0.20056608849528024
+    },
+    {
+      "date": "2017-04-04",
+      "cumulative_return": -0.19825105673651777
+    },
+    {
+      "date": "2017-05-04",
+      "cumulative_return": -0.1521942914839961
+    },
+    {
+      "date": "2017-06-05",
+      "cumulative_return": -0.15017122702611507
+    },
+    {
+      "date": "2017-07-05",
+      "cumulative_return": -0.11111916502472574
+    },
+    {
+      "date": "2017-08-03",
+      "cumulative_return": -0.10436342740102234
+    },
+    {
+      "date": "2017-09-01",
+      "cumulative_return": -0.12379719929201527
+    },
+    {
+      "date": "2017-10-03",
+      "cumulative_return": -0.031162384652366426
+    },
+    {
+      "date": "2017-11-01",
+      "cumulative_return": -0.03745350037795636
+    },
+    {
+      "date": "2017-12-01",
+      "cumulative_return": -0.05061228608680146
+    },
+    {
+      "date": "2018-01-03",
+      "cumulative_return": 0.011326540209743996
+    },
+    {
+      "date": "2018-02-02",
+      "cumulative_return": 0.07569566922516735
+    },
+    {
+      "date": "2018-03-06",
+      "cumulative_return": 0.01634722046128423
+    },
+    {
+      "date": "2018-04-05",
+      "cumulative_return": 0.09926556807925468
+    },
+    {
+      "date": "2018-05-04",
+      "cumulative_return": 0.15818438487456699
+    },
+    {
+      "date": "2018-06-05",
+      "cumulative_return": 0.11235972129427685
+    },
+    {
+      "date": "2018-07-05",
+      "cumulative_return": 0.1106286166692132
+    },
+    {
+      "date": "2018-08-03",
+      "cumulative_return": 0.177827403663126
+    },
+    {
+      "date": "2018-09-04",
+      "cumulative_return": 0.16030236460458513
+    },
+    {
+      "date": "2018-10-03",
+      "cumulative_return": 0.0913245485503622
+    },
+    {
+      "date": "2018-11-01",
+      "cumulative_return": 0.076317542695306
+    },
+    {
+      "date": "2018-12-03",
+      "cumulative_return": 0.02507271214855522
+    },
+    {
+      "date": "2019-01-04",
+      "cumulative_return": 0.01837992825126933
+    },
+    {
+      "date": "2019-02-05",
+      "cumulative_return": 0.04740808919522532
+    },
+    {
+      "date": "2019-03-07",
+      "cumulative_return": 0.003138062160073174
+    },
+    {
+      "date": "2019-04-05",
+      "cumulative_return": -0.04081418637012513
+    },
+    {
+      "date": "2019-05-07",
+      "cumulative_return": 0.0007385814131131152
+    },
+    {
+      "date": "2019-06-06",
+      "cumulative_return": -0.0077690896267348375
+    },
+    {
+      "date": "2019-07-08",
+      "cumulative_return": 0.04384305358849705
+    },
+    {
+      "date": "2019-08-06",
+      "cumulative_return": 0.10094115115429592
+    },
+    {
+      "date": "2019-09-05",
+      "cumulative_return": 0.09614721024082207
+    },
+    {
+      "date": "2019-10-04",
+      "cumulative_return": -0.06521021243839797
+    },
+    {
+      "date": "2019-11-04",
+      "cumulative_return": -0.07746666825168891
+    },
+    {
+      "date": "2019-12-04",
+      "cumulative_return": -0.06822970965019792
+    },
+    {
+      "date": "2020-01-06",
+      "cumulative_return": -0.012716472599164197
+    },
+    {
+      "date": "2020-02-05",
+      "cumulative_return": 0.045595262579314566
+    },
+    {
+      "date": "2020-03-06",
+      "cumulative_return": 0.11481731120624517
+    },
+    {
+      "date": "2020-04-06",
+      "cumulative_return": 0.14652325010812173
+    },
+    {
+      "date": "2020-05-06",
+      "cumulative_return": -0.10574621818305097
+    },
+    {
+      "date": "2020-06-05",
+      "cumulative_return": 0.10644796838587456
+    },
+    {
+      "date": "2020-07-07",
+      "cumulative_return": 0.15446422722729425
+    },
+    {
+      "date": "2020-08-05",
+      "cumulative_return": 0.22225767718897615
+    },
+    {
+      "date": "2020-09-03",
+      "cumulative_return": 0.2378177318643817
+    },
+    {
+      "date": "2020-10-05",
+      "cumulative_return": 0.23464745286002686
+    },
+    {
+      "date": "2020-11-03",
+      "cumulative_return": -0.05976625024603788
+    },
+    {
+      "date": "2020-12-03",
+      "cumulative_return": -0.07469607490126973
+    },
+    {
+      "date": "2021-01-05",
+      "cumulative_return": -0.06883996153416805
+    },
+    {
+      "date": "2021-02-04",
+      "cumulative_return": -0.31941350986415795
+    },
+    {
+      "date": "2021-03-08",
+      "cumulative_return": -0.25989521152491146
+    },
+    {
+      "date": "2021-04-07",
+      "cumulative_return": -0.24770976793766097
+    },
+    {
+      "date": "2021-05-06",
+      "cumulative_return": -0.1839501638554164
+    },
+    {
+      "date": "2021-06-07",
+      "cumulative_return": -0.207429710964402
+    },
+    {
+      "date": "2021-07-07",
+      "cumulative_return": -0.18928251983977218
+    },
+    {
+      "date": "2021-08-05",
+      "cumulative_return": -0.19837345174318732
+    },
+    {
+      "date": "2021-09-03",
+      "cumulative_return": -0.2116565187852223
+    },
+    {
+      "date": "2021-10-05",
+      "cumulative_return": -0.16800586473334855
+    },
+    {
+      "date": "2021-11-03",
+      "cumulative_return": -0.16037485419751507
+    },
+    {
+      "date": "2021-12-03",
+      "cumulative_return": -0.15377605243379777
+    },
+    {
+      "date": "2022-01-04",
+      "cumulative_return": -0.1522246102263105
+    },
+    {
+      "date": "2022-02-03",
+      "cumulative_return": -0.16721729222975767
+    },
+    {
+      "date": "2022-03-07",
+      "cumulative_return": -0.1711909856532522
+    },
+    {
+      "date": "2022-04-05",
+      "cumulative_return": -0.08530580779962449
+    },
+    {
+      "date": "2022-05-05",
+      "cumulative_return": -0.030515468665358814
+    },
+    {
+      "date": "2022-06-06",
+      "cumulative_return": -0.017077956335336153
+    },
+    {
+      "date": "2022-07-07",
+      "cumulative_return": -0.13082694169351017
+    },
+    {
+      "date": "2022-08-05",
+      "cumulative_return": -0.05446601206950319
+    },
+    {
+      "date": "2022-09-06",
+      "cumulative_return": 0.036831898476545444
+    },
+    {
+      "date": "2022-10-05",
+      "cumulative_return": 0.07106961311644744
+    },
+    {
+      "date": "2022-11-03",
+      "cumulative_return": -0.06558829516762832
+    },
+    {
+      "date": "2022-12-05",
+      "cumulative_return": -0.09532013883188317
+    },
+    {
+      "date": "2023-01-05",
+      "cumulative_return": -0.3125853889233081
+    },
+    {
+      "date": "2023-02-06",
+      "cumulative_return": -0.31115498318562174
+    },
+    {
+      "date": "2023-03-08",
+      "cumulative_return": -0.3608741521710457
+    },
+    {
+      "date": "2023-04-06",
+      "cumulative_return": -0.36467654083844825
+    },
+    {
+      "date": "2023-05-08",
+      "cumulative_return": -0.3476535019058451
+    },
+    {
+      "date": "2023-06-07",
+      "cumulative_return": -0.3083134806186604
+    },
+    {
+      "date": "2023-07-10",
+      "cumulative_return": -0.2913544850707236
+    },
+    {
+      "date": "2023-08-08",
+      "cumulative_return": -0.26504255832132806
+    },
+    {
+      "date": "2023-09-07",
+      "cumulative_return": -0.265272943350788
+    },
+    {
+      "date": "2023-10-06",
+      "cumulative_return": -0.2678091150756484
+    },
+    {
+      "date": "2023-11-06",
+      "cumulative_return": -0.29737015713228876
+    },
+    {
+      "date": "2023-12-06",
+      "cumulative_return": -0.2658276576045733
+    },
+    {
+      "date": "2024-01-08",
+      "cumulative_return": -0.1456162196342201
+    },
+    {
+      "date": "2024-02-07",
+      "cumulative_return": -0.08913993215298122
+    },
+    {
+      "date": "2024-03-08",
+      "cumulative_return": -0.07224352035629622
+    },
+    {
+      "date": "2024-04-09",
+      "cumulative_return": -0.08935439662683287
+    },
+    {
+      "date": "2024-05-08",
+      "cumulative_return": -0.013456947214278925
+    },
+    {
+      "date": "2024-06-07",
+      "cumulative_return": 0.07313618421399526
+    },
+    {
+      "date": "2024-07-10",
+      "cumulative_return": 0.04419777434483496
+    },
+    {
+      "date": "2024-08-08",
+      "cumulative_return": 0.03853456701872715
+    },
+    {
+      "date": "2024-09-09",
+      "cumulative_return": 0.14332574555540867
+    },
+    {
+      "date": "2024-10-08",
+      "cumulative_return": 0.20172602865846612
+    },
+    {
+      "date": "2024-11-06",
+      "cumulative_return": 0.22264513437822941
+    },
+    {
+      "date": "2024-12-06",
+      "cumulative_return": 0.245463089890396
+    },
+    {
+      "date": "2025-01-08",
+      "cumulative_return": 0.35341205825937005
+    },
+    {
+      "date": "2025-02-10",
+      "cumulative_return": 0.15609518733899108
+    },
+    {
+      "date": "2025-03-12",
+      "cumulative_return": 0.27839009659657044
+    },
+    {
+      "date": "2025-04-10",
+      "cumulative_return": 0.25058140430421383
+    },
+    {
+      "date": "2025-05-12",
+      "cumulative_return": 0.21153441453138777
+    },
+    {
+      "date": "2025-06-11",
+      "cumulative_return": 0.23696240333964913
+    },
+    {
+      "date": "2025-07-14",
+      "cumulative_return": 0.2844158682411657
+    },
+    {
+      "date": "2025-08-12",
+      "cumulative_return": 0.29510015412692425
+    },
+    {
+      "date": "2025-09-11",
+      "cumulative_return": 0.2569075039757034
+    },
+    {
+      "date": "2025-10-10",
+      "cumulative_return": 0.23728365769222237
+    },
+    {
+      "date": "2025-11-10",
+      "cumulative_return": 0.16084715743817202
+    },
+    {
+      "date": "2025-12-10",
+      "cumulative_return": 0.14158680405712865
+    },
+    {
+      "date": "2026-01-12",
+      "cumulative_return": 0.2539312611153357
+    },
+    {
+      "date": "2026-02-11",
+      "cumulative_return": 0.16811167201564547
+    },
+    {
+      "date": "2026-03-13",
+      "cumulative_return": 0.2771194798637746
+    },
+    {
+      "date": "2026-04-14",
+      "cumulative_return": 0.31092190757640226
+    },
+    {
+      "date": "2026-05-13",
+      "cumulative_return": 0.41557742786262164
+    },
+    {
+      "date": "2026-06-12",
+      "cumulative_return": 0.5653065951949596
+    },
+    {
+      "date": "2026-07-15",
+      "cumulative_return": 0.4380917498874506
+    },
+    {
+      "date": "2026-08-13",
+      "cumulative_return": 0.43761869340522663
+    }
+  ]
+}

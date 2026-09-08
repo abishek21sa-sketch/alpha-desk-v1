@@ -1,0 +1,22 @@
+{
+  "table": "prices",
+  "grain": "one row per (symbol, date)",
+  "source": "Yahoo Finance chart API via yfinance, split/dividend-adjusted (auto_adjust=True)",
+  "columns": {
+    "symbol": {"type": "string", "description": "Ticker as defined in alpha_desk.data.universe"},
+    "date": {"type": "date", "description": "Trading session date"},
+    "open": {"type": "float", "unit": "USD", "description": "Adjusted open"},
+    "high": {"type": "float", "unit": "USD", "description": "Adjusted high"},
+    "low": {"type": "float", "unit": "USD", "description": "Adjusted low"},
+    "close": {"type": "float", "unit": "USD", "description": "Adjusted close"},
+    "volume": {"type": "float", "unit": "shares", "description": "Session share volume"}
+  },
+  "invariants": [
+    "no duplicate (symbol, date) pairs",
+    "high >= low",
+    "high >= open and high >= close",
+    "low <= open and low <= close",
+    "open, high, low, close, volume are finite and non-negative",
+    "date is never later than the fetch date recorded in data/provenance/source_manifest.json"
+  ]
+}

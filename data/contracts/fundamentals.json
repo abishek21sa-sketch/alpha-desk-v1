@@ -1,0 +1,23 @@
+{
+  "table": "fundamentals",
+  "grain": "one row per (ticker, concept, unit, end_date, form, accn) -- a filer can restate the same concept/period across multiple filings (10-Q, 10-K, 10-K/A); all restatements are kept, not deduplicated to 'latest'",
+  "source": "SEC EDGAR XBRL company-facts API (data.sec.gov/api/xbrl/companyfacts), us-gaap taxonomy only",
+  "columns": {
+    "ticker": {"type": "string"},
+    "concept": {"type": "string", "description": "us-gaap XBRL tag, restricted to alpha_desk.data.sources.XBRL_CONCEPTS"},
+    "unit": {"type": "string", "description": "XBRL unit, typically USD or USD/shares or shares"},
+    "end_date": {"type": "date", "description": "Period end date for this observation"},
+    "start_date": {"type": "date", "nullable": true, "description": "Period start date; null for instant (balance-sheet) concepts like Assets"},
+    "val": {"type": "float"},
+    "fy": {"type": "int", "description": "Fiscal year as tagged by the filer"},
+    "fp": {"type": "string", "description": "Fiscal period (Q1/Q2/Q3/FY) as tagged by the filer"},
+    "form": {"type": "string", "description": "SEC form type (10-K, 10-Q, 10-K/A, ...)"},
+    "filed": {"type": "date", "description": "Date the filing hit EDGAR -- the correct timestamp for point-in-time backtests, NOT end_date"},
+    "accn": {"type": "string", "description": "SEC accession number identifying the exact filing"}
+  },
+  "invariants": [
+    "concept is one of the 8 XBRL_CONCEPTS extracted, not the full company-facts payload",
+    "filed >= end_date always (a filing cannot predate the period it reports on)",
+    "a signal model MUST join on `filed`, not `end_date`, to avoid look-ahead bias -- see docs/DATA_BACKBONE.md"
+  ]
+}
