@@ -227,8 +227,19 @@ export default async function OverviewPage() {
                         : "Configured, not connected"
                       : "Not configured"}
                   </p>
-                  <p className="stat-tile-note" style={{ color: "var(--status-warning)" }}>
-                    client built &amp; tested, real credentials not found on this machine
+                  <p
+                    className="stat-tile-note"
+                    style={{
+                      color: (alpaca as AlpacaConnectivityStatus).connected
+                        ? "var(--status-good)"
+                        : "var(--status-warning)",
+                    }}
+                  >
+                    {(alpaca as AlpacaConnectivityStatus).connected
+                      ? `real paper account — equity $${(alpaca as AlpacaConnectivityStatus).equity}`
+                      : (alpaca as AlpacaConnectivityStatus).configured
+                        ? (alpaca as AlpacaConnectivityStatus).message ?? "credentials set, connection failed"
+                        : "client built & tested, real credentials not found on this machine"}
                   </p>
                 </>
               )}
