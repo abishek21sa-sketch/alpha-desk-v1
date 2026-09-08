@@ -284,6 +284,37 @@ each time by importing `service.main` directly in a fresh Python process and
 confirming the routes were correct there. If you hit the same symptom,
 don't keep restarting on the same port -- move to a different one.
 
+### Deploying (Render backend + Vercel frontend)
+
+The backend is a stateless read layer over committed JSON artifacts (see
+`service/artifacts_io.py`) -- it needs no database and no secrets to run,
+which makes it a plain Render web service. `render.yaml` at the repo root
+is a Render Blueprint: point Render at this repo and it reads the build/
+start commands automatically.
+
+```yaml
+buildCommand: pip install -e ".[service]"
+startCommand: uvicorn service.main:app --host 0.0.0.0 --port $PORT
+```
+
+The frontend is a standard Next.js app in `frontend/` -- deploys to Vercel
+with its Root Directory setting pointed at that subfolder, no other config.
+
+Deploy order matters (each side needs the other's URL):
+1. Deploy the backend to Render first. Note its public URL
+   (`https://<name>.onrender.com`).
+2. Deploy the frontend to Vercel with `NEXT_PUBLIC_API_URL` set to that
+   Render URL.
+3. Back in Render, set the `ALLOWED_ORIGINS` env var (already scaffolded
+   in `render.yaml`) to the Vercel production URL. `*.vercel.app` preview
+   deployments are already allowed via a regex in `service/main.py`, so
+   this only needs the one stable production origin.
+
+`ALPACA_API_KEY`/`ALPACA_SECRET_KEY` do NOT need to be set on Render --
+`/api/execution/status` serves the pre-computed
+`artifacts/alpaca_connectivity_status.json` snapshot, the same as every
+other phase's report, not a live Alpaca call.
+
 ## Roadmap
 
 | Phase | Module | Status |

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: alpha-desk-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -e ".[service]"
+    startCommand: uvicorn service.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: ALLOWED_ORIGINS
+        # Update this after the Vercel frontend is deployed -- set to its
+        # production URL, e.g. https://alpha-desk-v1.vercel.app (no
+        # trailing slash). *.vercel.app preview deployments are already
+        # allowed via a regex in service/main.py, so this only needs the
+        # one stable production origin.
+        value: http://localhost:3000

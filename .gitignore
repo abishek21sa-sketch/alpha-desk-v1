@@ -4,7 +4,12 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 data/raw/
-data/processed/
+# The full warehouse (23MB, rebuilt by scripts/build_data_backbone.py) is
+# excluded, but build_summary.json is small (~1KB) and is the one file
+# service/routers/data.py actually reads at request time -- needed for
+# a deployed backend to serve /api/data/status without the full warehouse.
+data/processed/*
+!data/processed/build_summary.json
 .env
 
 # frontend (Next.js)

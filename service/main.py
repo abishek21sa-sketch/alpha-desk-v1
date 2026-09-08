@@ -6,6 +6,8 @@ live-recompute API.
 
 from __future__ import annotations
 
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -18,9 +20,24 @@ app = FastAPI(
     version="0.1.0",
 )
 
+# ALLOWED_ORIGINS: comma-separated exact origins (e.g. the deployed Vercel
+# URL) -- set as a real env var in production (see render.yaml); defaults
+# to the local dev frontend so `uvicorn service.main:app` still works
+# out of the box with no configuration.
+_default_origins = "http://localhost:3000"
+allowed_origins = [
+    o.strip() for o in os.environ.get("ALLOWED_ORIGINS", _default_origins).split(",") if o.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=allowed_origins,
+    # Vercel preview deployments get a unique per-branch/PR subdomain
+    # (e.g. alpha-desk-v1-git-<branch>-<user>.vercel.app) that can't be
+    # listed in advance -- this regex covers any *.vercel.app origin in
+    # addition to the exact origins above, so preview deploys work without
+    # needing a Render env var update on every branch push.
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["GET"],
     allow_headers=["*"],
