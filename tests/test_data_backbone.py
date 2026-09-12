@@ -8,6 +8,8 @@ import hashlib
 import json
 from pathlib import Path
 
+import pytest
+
 from alpha_desk.data.universe import EQUITY_UNIVERSE, ETF_UNIVERSE, FRED_SERIES
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -85,6 +87,12 @@ class TestProvenanceManifest:
     def test_manifest_hashes_match_files_on_disk(self, manifest):
         ok_items = [m for m in manifest["items"] if m["status"] == "ok" and "sha256" in m]
         assert len(ok_items) > 0
+        # data/raw/ is gitignored (real fetched market data, not committed),
+        # so a fresh checkout has the manifest but not the files it
+        # describes -- skip rather than fail in that environment, matching
+        # warehouse_con's pattern for the not-yet-built warehouse.
+        if not (ROOT / ok_items[0]["path"]).exists():
+            pytest.skip("data/raw/ not present -- run scripts/fetch_public_data.py first")
         # Spot-check every item rather than sampling -- the files are small
         # enough (data/raw is a few tens of MB total) that this is cheap.
         for item in ok_items:
